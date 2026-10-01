@@ -1,1 +1,35 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My eBook Store</title>
+    
+    <!-- Payhip JavaScript Library -->
+    <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; color: #333; line-height: 1.6; padding: 40px 20px; }
+        .container { max-width: 500px; margin: 0 auto; background: #ffffff; padding: 35px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); text-align: center; }
+        h1 { font-size: 1.8rem; margin-bottom: 15px; color: #111; }
+        p { font-size: 1rem; color: #666; margin-bottom: 20px; }
+        .price { font-size: 1.5rem; font-weight: bold; color: #28a745; margin-bottom: 25px; }
+        .payhip-buy-button { display: inline-block; background-color: #0066ff; color: #fff; padding: 14px 28px; border-radius: 6px; font-weight: bold; text-decoration: none; font-size: 1rem; transition: background 0.2s ease; }
+        .payhip-buy-button:hover { background-color: #0052cc; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mastering Digital Sales</h1>
+        <p>The ultimate guide to creating, packaging, and selling digital products online.</p>
+        <div class="price">$19.99</div>
+
+        <!-- Replace YOUR_PRODUCT_ID with your actual Payhip product ID/code -->
+        <a href="https://payhip.com/b/YOUR_PRODUCT_ID" class="payhip-buy-button" data-product="YOUR_PRODUCT_ID">Buy eBook Now</a>
+    </div>
+
+</body>
+</html>
