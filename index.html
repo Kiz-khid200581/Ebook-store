@@ -1,92 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KIZKHID Digital Store</title>
-    
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: #f4f6f9; 
-            color: #333; 
-            line-height: 1.6; 
-            padding: 40px 20px; 
-        }
-        header { text-align: center; margin-bottom: 40px; }
-        header h1 { font-size: 2rem; color: #111; margin-bottom: 8px; }
-        header p { color: #666; font-size: 1.05rem; }
-        
-        .container { 
-            display: flex; 
-            flex-wrap: wrap; 
-            gap: 25px; 
-            justify-content: center; 
-            max-width: 1000px; 
-            margin: 0 auto; 
-        }
-        
-        .card { 
-            background: #ffffff; 
-            padding: 30px; 
-            border-radius: 12px; 
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08); 
-            text-align: center; 
-            flex: 1 1 280px; 
-            max-width: 320px; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-between; 
-        }
-        .card h2 { font-size: 1.3rem; margin-bottom: 12px; color: #111; }
-        .card p { font-size: 0.95rem; color: #666; margin-bottom: 25px; flex-grow: 1; }
-        
-        .paystack-buy-button { 
-            display: inline-block; 
-            background-color: #0ba4db; 
-            color: #fff; 
-            padding: 12px 24px; 
-            border-radius: 6px; 
-            font-weight: bold; 
-            text-decoration: none; 
-            font-size: 0.95rem; 
-            transition: background 0.2s ease; 
-        }
-        .paystack-buy-button:hover { background-color: #0882ad; }
-    </style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiz Khid - Official Ebook Store | Pay With MoMo</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#f6f9fc;color:#0a2540;padding:15px}
+.header{text-align:center;padding:35px 20px}
+.badge{background:#0a2540;color:#fff;padding:7px 16px;border-radius:20px;font-size:.85rem;display:inline-block;margin-bottom:12px}
+.header h1{font-size:2.3rem;line-height:1.2}
+.header p{color:#5a6d80;margin-top:10px;font-size:1.05rem}
+.store{display:grid;gap:24px;max-width:900px;margin:0 auto}
+.card{background:#fff;border-radius:20px;padding:28px;text-align:center;box-shadow:0 12px 35px rgba(0,0,0,.08);border:1px solid #eef2f7}
+.card img{width:200px;border-radius:12px;margin-bottom:18px;box-shadow:0 12px 24px rgba(0,0,0,.15)}
+.card h2{font-size:1.35rem;margin-bottom:10px}
+.card p{color:#62748a;font-size:.95rem;line-height:1.6}
+.features{text-align:left;background:#f0f7ff;padding:14px;border-radius:12px;margin:16px 0;font-size:.9rem}
+.features li{list-style:none;margin:6px 0}.features li::before{content:"✅ "}
+.price{font-size:1.4rem;font-weight:800;margin:12px 0}.old{color:#999;text-decoration:line-through;font-weight:400;font-size:1rem;margin-left:6px}
+.btn{display:block;padding:16px;border-radius:12px;color:#fff;text-decoration:none;font-weight:800;font-size:1.1rem;margin-top:12px;transition:.2s}
+.btn:hover{transform:scale(1.02)}
+.blue{background:#0084ff}.green{background:#0a7a42}.black{background:#111}
+.trust{max-width:700px;margin:35px auto;background:#fff;padding:22px;border-radius:16px;text-align:center;box-shadow:0 8px 25px rgba(0,0,0,.05)}
+.wa{background:#25D366}
+.footer{text-align:center;padding:35px;color:#9aa8b6;font-size:.8rem}
+</style>
 </head>
 <body>
 
-    <header>
-        <h1>KIZKHID Digital Store</h1>
-        <p>Premium Digital eBooks & Step-by-Step Success Guides</p>
-    </header>
+<div class="header">
+<div class="badge">🇬🇭 MADE FOR GHANA • PAY WITH MOMO • INSTANT DOWNLOAD</div>
+<h1>3 Ebooks That Will Change Your Hustle</h1>
+<p>Less than shawarma money. Download instantly after MoMo payment.</p>
+</div>
 
-    <div class="container">
+<div class="store">
 
-        <!-- eBook 1 -->
-        <div class="card">
-            <h2>The 7 Days Consistent Roadmap To Success</h2>
-            <p>Get instant access to your step-by-step digital roadmap guide.</p>
-            <a href="https://paystack.com/buy/the-7-days-consistent-roadmap-to-success-sdkeix" target="_blank" class="paystack-buy-button">Buy eBook Now</a>
-        </div>
+<div class="card">
+<img src="https://kiz-khid200581.github.io/Ebook-store/cover1.jpg" alt="7 Days Roadmap">
+<h2>1. The 7 Days Consistent Roadmap To Success</h2>
+<p>The exact 7-day plan to kill laziness and become consistent. All from your phone.</p>
+<ul class="features">
+<li>Daily action plan (Day 1-7)</li>
+<li>How to stop procrastination</li>
+<li>Bonus: Consistency tracker sheet</li>
+</ul>
+<div class="price">GH₵50 <span class="old">GH₵120</span></div>
+<a href="https://paystack.com/buy/the-7-days-consistent-roadmap-to-success-sdkeix" class="btn blue">Buy Now - GH₵50</a>
+</div>
 
-        <!-- eBook 2 -->
-        <div class="card">
-            <h2>Financial Independence Master Class Edition</h2>
-            <p>Master financial literacy and learn actionable strategies to achieve financial freedom.</p>
-            <a href="https://paystack.com/buy/financial-independence-master-class-edition-zsaosz" target="_blank" class="paystack-buy-button">Buy eBook Now</a>
-        </div>
+<div class="card">
+<img src="https://kiz-khid200581.github.io/Ebook-store/cover2.jpg" alt="Financial Independence">
+<h2>2. Financial Independence Master Class Edition</h2>
+<p>Budget on low income, save in Ghana, and create extra income streams. Simple English.</p>
+<ul class="features">
+<li>50/30/20 Ghana budget method</li>
+<li>5 side hustles with GH₵100</li>
+<li>Bonus: Budget template + savings plan</li>
+</ul>
+<div class="price">GH₵70 <span class="old">GH₵150</span></div>
+<a href="https://paystack.com/buy/financial-independence-master-class-edition-zsaosz" class="btn green">Buy Now - GH₵70</a>
+</div>
 
-        <!-- eBook 3 -->
-        <div class="card">
-            <h2>Business Minded: The Mindset Behind Every Hustle</h2>
-            <p>Develop the entrepreneurial mindset needed to start, scale, and sustain a successful business.</p>
-            <a href="https://paystack.com/buy/business-minded-the-mindset-behind-every-hustle-that--epqfat" target="_blank" class="paystack-buy-button">Buy eBook Now</a>
-        </div>
+<div class="card">
+<img src="https://kiz-khid200581.github.io/Ebook-store/cover3.jpg" alt="Business Minded">
+<h2>3. Business Minded: The Mindset Behind Every Hustle</h2>
+<p>Rewire your brain for money. Learn how rich people think and turn GH₵10 to GH₵100.</p>
+<ul class="features">
+<li>Rich vs Poor mindset</li>
+<li>How to spot business opportunities around you</li>
+<li>Start with zero capital</li>
+</ul>
+<div class="price">GH₵60 <span class="old">GH₵130</span></div>
+<a href="https://paystack.com/buy/business-minded-the-mindset-behind-every-hustle-that--epqfat" class="btn black">Buy Now - GH₵60</a>
+</div>
 
-    </div>
+</div>
 
-</body>
-</html>
+<div class="trust">
+<h3>🔒 Trusted by 1,200+ Ghanaians</h3>
+<p style="margin-top:8px;line-height:1.6;color:#62748a;">⚡ Instant download after payment<br>📱 Pay with MTN MoMo, Vodafone Cash, Card<br>💬 Support on WhatsApp 24/7</p>
+<a href="https://wa.me/233XXXXXXXXX?text=Hi%20Kiz,%20I%20want%20to%20buy%20your%20ebooks" class="btn wa">Chat on WhatsApp</a>
+</div>
+
+<div class="footer">© 2026 Kiz Khid
