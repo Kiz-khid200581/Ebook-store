@@ -1,134 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kiz Khid - Official Ebook Store | Pay With MoMo</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
-body{background:#f6f9fc;color:#0a2540;padding:15px}
-.header{text-align:center;padding:35px 20px}
-.brand-title{font-size:1rem;font-weight:800;letter-spacing:1.5px;color:#0084ff;text-transform:uppercase;margin-bottom:8px}
-.header h1{font-size:2.3rem;line-height:1.2}
-.header p{color:#5a6d80;margin-top:10px;font-size:1.05rem}
-.store{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:24px;max-width:1100px;margin:0 auto}
-.card{background:#fff;border-radius:20px;padding:28px;text-align:center;box-shadow:0 12px 35px rgba(0,0,0,.08);border:1px solid #eef2f7;display:flex;flex-direction:column;justify-content:space-between}
-.card h2{font-size:1.35rem;margin-bottom:10px}
-.card p{color:#62748a;font-size:.95rem;line-height:1.6}
-.features{text-align:left;background:#f0f7ff;padding:14px;border-radius:12px;margin:16px 0;font-size:.9rem}
-.features li{list-style:none;margin:6px 0}.features li::before{content:"✅ "}
-.price{font-size:1.4rem;font-weight:800;margin:12px 0}.old{color:#999;text-decoration:line-through;font-weight:400;font-size:1rem;margin-left:6px}
-.btn{display:block;padding:16px;border-radius:12px;color:#fff;text-decoration:none;font-weight:800;font-size:1.1rem;margin-top:12px;transition:.2s}
-.btn:hover{transform:scale(1.02)}
-.blue{background:#0084ff}.green{background:#0a7a42}.black{background:#111}.purple{background:#6c5ce7}.orange{background:#e17055}
-.trust{max-width:700px;margin:35px auto;background:#fff;padding:22px;border-radius:16px;text-align:center;box-shadow:0 8px 25px rgba(0,0,0,.05)}
-.wa{background:#25D366}
-.footer{text-align:center;padding:35px;color:#9aa8b6;font-size:.8rem}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KIZKHID Online Sales | Digital eBooks Store</title>
+  <style>
+    :root {
+      --primary: #0a2540;
+      --accent: #00d4b1;
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --text: #2d3748;
+      --text-muted: #718096;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 40px;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card-content {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .card-desc {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .buy-btn {
+      display: block;
+      width: 100%;
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 0.75rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .buy-btn:hover {
+      background-color: #00d4b1;
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid #e2e8f0;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
-<div class="header">
-<div class="brand-title">🚀 KIZKHID ONLINE SALES</div>
-<h1>SUCCESSFUL Ebooks That Will Change Your Hustle</h1>
-<p>Less than shawarma money. Download instantly after MoMo payment.</p>
-</div>
+  <header>
+    <h1>KIZKHID ONLINE SALES</h1>
+    <p>Empowering your financial, digital marketing, and business future with practical guides.</p>
+  </header>
 
-<div class="store">
+  <main class="container">
+    <div class="grid">
 
-<!-- eBook 1 -->
-<div class="card">
-<div>
-<h2>1. The 7 Days Consistent Roadmap To Success</h2>
-<p>The exact 7-day plan to kill laziness and become consistent. All from your phone.</p>
-<ul class="features">
-<li>Daily action plan (Day 1-7)</li>
-<li>How to stop procrastination</li>
-<li>Bonus: Consistency tracker sheet</li>
-</ul>
-</div>
-<div>
-<div class="price">GH₵50 <span class="old">GH₵120</span></div>
-<a href="https://paystack.com/buy/the-7-days-consistent-roadmap-to-success-sdkeix" class="btn blue">Buy Now - GH₵50</a>
-</div>
-</div>
+      <!-- Book 1 -->
+      <article class="card">
+        <div class="card-content">
+          <h2 class="card-title">The 7 Days Consistent Roadmap To Success</h2>
+          <p class="card-desc">A practical step-by-step guide to building momentum, daily discipline, and long-term consistency.</p>
+          <a href="PASTE_LIVE_PAYSTACK_LINK_1_HERE" class="buy-btn" target="_blank">Buy Now</a>
+        </div>
+      </article>
 
-<!-- eBook 2 -->
-<div class="card">
-<div>
-<h2>2. Financial Independence Master Class Edition</h2>
-<p>Budget on low income, save in Ghana, and create extra income streams. Simple English.</p>
-<ul class="features">
-<li>50/30/20 Ghana budget method</li>
-<li>5 side hustles with GH₵100</li>
-<li>Bonus: Budget template + savings plan</li>
-</ul>
-</div>
-<div>
-<div class="price">GH₵70 <span class="old">GH₵150</span></div>
-<a href="https://paystack.com/buy/financial-independence-master-class-edition-zsaosz" class="btn green">Buy Now - GH₵70</a>
-</div>
-</div>
+      <!-- Book 2 -->
+      <article class="card">
+        <div class="card-content">
+          <h2 class="card-title">Financial Independence Master Class Edition</h2>
+          <p class="card-desc">Master money management, wealth-building strategies, and smart investing principles.</p>
+          <a href="PASTE_LIVE_PAYSTACK_LINK_2_HERE" class="buy-btn" target="_blank">Buy Now</a>
+        </div>
+      </article>
 
-<!-- eBook 3 -->
-<div class="card">
-<div>
-<h2>3. Business Minded: The Mindset Behind Every Hustle</h2>
-<p>Rewire your brain for money. Learn how rich people think and turn GH₵10 to GH₵100.</p>
-<ul class="features">
-<li>Rich vs Poor mindset</li>
-<li>How to spot business opportunities around you</li>
-<li>Start with zero capital</li>
-</ul>
-</div>
-<div>
-<div class="price">GH₵60 <span class="old">GH₵130</span></div>
-<a href="https://paystack.com/buy/business-minded-the-mindset-behind-every-hustle-that--epqfat" class="btn black">Buy Now - GH₵60</a>
-</div>
-</div>
+      <!-- Book 3 -->
+      <article class="card">
+        <div class="card-content">
+          <h2 class="card-title">Business Minded: The Mindset Behind Every Hustle</h2>
+          <p class="card-desc">Develop the resilient entrepreneurial mindset required to build and scale successful businesses.</p>
+          <a href="PASTE_LIVE_PAYSTACK_LINK_3_HERE" class="buy-btn" target="_blank">Buy Now</a>
+        </div>
+      </article>
 
-<!-- eBook 4 -->
-<div class="card">
-<div>
-<h2>4. Without Net No Mon</h2>
-<p>Learn how to build digital networks and leverage online connection for consistent earnings.</p>
-<ul class="features">
-<li>Leveraging digital communities</li>
-<li>Monetizing online connections</li>
-<li>Actionable strategies for beginners</li>
-</ul>
-</div>
-<div>
-<div class="price">GH₵50 <span class="old">GH₵110</span></div>
-<a href="https://paystack.com/buy/without-net-no-mon-ylixws" class="btn purple">Buy Now - GH₵50</a>
-</div>
-</div>
+      <!-- Book 4 -->
+      <article class="card">
+        <div class="card-content">
+          <h2 class="card-title">Without Net No Mon</h2>
+          <p class="card-desc">Discover practical online business strategies to monetize digital skills and internet connectivity.</p>
+          <a href="PASTE_LIVE_PAYSTACK_LINK_4_HERE" class="buy-btn" target="_blank">Buy Now</a>
+        </div>
+      </article>
 
-<!-- eBook 5 -->
-<div class="card">
-<div>
-<h2>5. You Own The Smartphone, Not The Internet</h2>
-<p>Stop wasting data scrolling for free and start using your phone as a money-generating tool.</p>
-<ul class="features">
-<li>Turning phone screen time into income</li>
-<li>High-income digital skills you can run on mobile</li>
-<li>Data-saving productivity secrets</li>
-</ul>
-</div>
-<div>
-<div class="price">GH₵50 <span class="old">GH₵110</span></div>
-<a href="https://paystack.com/buy/you-own-the-smartphone-not-the-internet-vkrunl" class="btn orange">Buy Now - GH₵50</a>
-</div>
-</div>
+      <!-- Book 5 -->
+      <article class="card">
+        <div class="card-content">
+          <h2 class="card-title">You Own The Smartphone, Not The Internet</h2>
+          <p class="card-desc">Learn how to turn your mobile device into a income-generating machine using digital tools.</p>
+          <a href="PASTE_LIVE_PAYSTACK_LINK_5_HERE" class="buy-btn" target="_blank">Buy Now</a>
+        </div>
+      </article>
 
-</div>
+      <!-- Book 6 -->
+      <article class="card">
+        <div class="card-content">
+          <h2 class="card-title">Click Earn Scale</h2>
+          <p class="card-desc">Discover actionable tactics to click, earn, and scale multiple digital income streams efficiently.</p>
+          <a href="PASTE_LIVE_PAYSTACK_LINK_6_HERE" class="buy-btn" target="_blank">Buy Now</a>
+        </div>
+      </article>
 
-<div class="trust">
-<h3>🔒 Trusted by 1,200+ Ghanaians</h3>
-<p style="margin-top:8px;line-height:1.6;color:#62748a;">⚡ Instant download after payment<br>📱 Pay with MTN MoMo, Telecel Cash, AT Money, Card<br>💬 Support on WhatsApp 24/7</p>
-<a href="https://wa.me/233558444051?text=Hi%20Kiz,%20I%20want%20to%20buy%20your%20ebooks" class="btn wa">Chat on WhatsApp</a>
-</div>
+      <!-- Book 7 -->
+      <article class="card">
+        <div class="card-content">
+          <h2 class="card-title">Content Creation</h2>
+          <p class="card-desc">Master the art of generating high-converting, engaging digital content across platforms.</p>
+          <a href="PASTE_LIVE_PAYSTACK_LINK_7_HERE" class="buy-btn" target="_blank">Buy Now</a>
+        </div>
+      </article>
 
-<div class="footer">© 2026 Kiz Khid</div>
+      <!-- Book 8 -->
+      <article class="card">
+        <div class="card-content">
+          <h2 class="card-title">Building an Online Presence</h2>
+          <p class="card-desc">A step-by-step framework to establish a strong, professional digital brand presence.</p>
+          <a href="PASTE_LIVE_PAYSTACK_LINK_8_HERE" class="buy-btn" target="_blank">Buy Now</a>
+        </div>
+      </article>
+
+      <!-- Book 9 -->
+      <article class="card">
+        <div class="card-content">
+          <h2 class="card-title">Understanding Your Target Audience</h2>
+          <p class="card-desc">Learn how to research, identify, and target the exact audience most likely to buy from you.</p>
+          <a href="PASTE_LIVE_PAYSTACK_LINK_9_HERE" class="buy-btn" target="_blank">Buy Now</a>
+        </div>
+      </article>
+
+      <!-- Book 10 -->
+      <article class="card">
+        <div class="card-content">
+          <h2 class="card-title">Finding Affiliate Programs</h2>
+          <p class="card-desc">A comprehensive guide to locating, evaluating, and securing high-paying affiliate programs.</p>
+          <a href="PASTE_LIVE_PAYSTACK_LINK_10_HERE" class="buy-btn" target="_blank">Buy Now</a>
+        </div>
+      </article>
+
+      <!-- Book 11 -->
+      <article class="card">
+        <div class="card-content">
+          <h2 class="card-title">The Niche In Affiliate Marketing</h2>
+          <p class="card-desc">Unlock high-converting niche strategies and promotional techniques to maximize commissions.</p>
+          <a href="PASTE_LIVE_PAYSTACK_LINK_11_HERE" class="buy-btn" target="_blank">Buy Now</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; KIZKHID ONLINE SALES. All Rights Reserved.</p>
+    <p style="margin-top: 0.5rem;">Need assistance? <a href="https://wa.me/233558444051" target="_blank">Chat on WhatsApp (055 844 4051)</a></p>
+  </footer>
 
 </body>
 </html>
